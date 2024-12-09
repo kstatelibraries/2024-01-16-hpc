@@ -458,8 +458,6 @@ Install required software for the workshop or update any installations you alrea
   <li><strong>K-State participants</strong>, request a <a href="https://beocat.ksu.edu/">BeoCat account</a> as soon as possible. If you are requesting an account for this workshop only, list Dave Turner daveturner@ksu.edu as your advisor and use the comments field to indicate that the account is for the HPC User Software Carpentry workshop from January 16-17.</li>
   </ul>
   </li>
-<li><a href="https://librarycarpentry.org/lc-data-intro/">Introduction to Working with Data (Regular Expressions) setup, day 5 at 9 am</a></li>
-<li><a href="https://swcarpentry.github.io/git-novice/">Version Control with Git setup, day 5 at 1 pm</a></li>
 </ul>
 </div>
 {% endif %}
