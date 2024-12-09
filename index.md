@@ -408,9 +408,9 @@ please preview your site before committing, and make sure to run
   {% elsif site.carpentry == "lc" %}
   Library Carpentry
   {% endif %}
-  workshop,
-  you will need access to software as described below.
-  In addition, you will need an up-to-date web browser.
+      workshop, K-State affiliates will need access to a BeoCat account. If you do not already have a <a href="https://beocat.ksu.edu/">BeoCat account</a>, request one by January 13th, 2025.
+    You will need access to software as described below.
+    In addition, you will need an up-to-date web browser.
 </p>
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
@@ -444,7 +444,22 @@ during the workshop.
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
 {% elsif site.carpentry == "incubator" %}
-Please check the "Setup" page of
-<a href="{{site.incubator_lesson_site}}">the lesson homepage</a> for instructions to follow
-to obtain the software and data you will need to follow the lesson.
+<div id="setup-genomics">
+Install required software for the workshop or update any installations you already have. Directions and links to downloads:
+
+<ul>
+<li><a href="https://swcarpentry.github.io/shell-novice/">The Unix Shell, day 1</a></li>
+<li><a href="https://carpentries-incubator.github.io/hpc-intro/setup.html">Introduction to High-Performance Computing, day 1</a></li>
+<li>HPC User, day 2
+<ul>
+  <li><a href="https://drdaveturner.github.io/HPC-User/index.html">HPC User, day 2</a></li>
+  <li><strong>NBAF and USDA participants</strong>, get your USDA SCINet account as soon as possible. Here is the link <a href="https://scinet.usda.gov/about/signup">https://scinet.usda.gov/about/signup</a>. You will need to work with your supervisor for application and IT unit for activation of the SCINet account.</li>
+  <li><strong>WSU participants</strong>, request a <a href="https://www.wichita.edu/services/hpc/hpc-guides.php">BeoShock account</a> as soon as possible. </li>
+  <li><strong>K-State participants</strong>, request a <a href="https://beocat.ksu.edu/">BeoCat account</a> as soon as possible. If you are requesting an account for this workshop only, list Dave Turner daveturner@ksu.edu as your advisor and use the comments field to indicate that the account is for the HPC User Software Carpentry workshop from January 16-17.</li>
+  </ul>
+  </li>
+<li><a href="https://librarycarpentry.org/lc-data-intro/">Introduction to Working with Data (Regular Expressions) setup, day 5 at 9 am</a></li>
+<li><a href="https://swcarpentry.github.io/git-novice/">Version Control with Git setup, day 5 at 1 pm</a></li>
+</ul>
+</div>
 {% endif %}
