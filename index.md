@@ -454,7 +454,7 @@ Install required software for the workshop or update any installations you alrea
 <ul>
   <li><a href="https://drdaveturner.github.io/HPC-User/index.html">HPC User, day 2</a></li>
   <li><strong>WSU participants</strong>, request a <a href="https://www.wichita.edu/services/hpc/hpc-guides.php">BeoShock account</a> as soon as possible. </li>
-  <li><strong>K-State / Outside participants</strong>, request a <a href="https://beocat.ksu.edu/">BeoCat account</a> as soon as possible. If you are requesting an account for this workshop only, list Dave Turner daveturner@ksu.edu as your advisor and use the comments field to indicate that the account is for the HPC User Software Carpentry workshop from January 16-17.</li>
+  <li><strong>K-State participants</strong>, request a <a href="https://beocat.ksu.edu/">BeoCat account</a> as soon as possible. If you are requesting an account for this workshop only, list Dave Turner daveturner@ksu.edu as your advisor and use the comments field to indicate that the account is for the HPC User Software Carpentry workshop from January 16-17.</li>
   </ul>
   </li>
 </ul>
