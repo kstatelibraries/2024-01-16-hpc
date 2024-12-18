@@ -377,8 +377,23 @@ of code below the Schedule `<h2>` header below with
 
 <h2 id="schedule">Schedule</h2>
 
-{% include custom-schedule.html %}
+{% if site.carpentry == "swc" %}
+{% include swc/schedule.html %}
+{% elsif site.carpentry == "dc" %}
+{% include dc/schedule.html %}
+{% elsif site.carpentry == "lc" %}
+{% include lc/schedule.html %}
+{% elsif site.carpentry == "incubator" %}
+This workshop is teaching a lesson in
+<a href="https://carpentries-incubator.org/">The Carpentries Incubator</a>. Please check <a href="{{site.incubator_lesson_site}}">the lesson homepage</a> for a list of lesson sections and estimated timings.
+{% endif %}
 
+
+{% comment %}
+Edit/replace the text above if you want to include a schedule table.
+See the contents of the _includes/custom-schedule.html file for an example of
+how one of these schedule tables is constructed.
+{% endcomment %}
 
 {% if site.pilot %}
 The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please <a href="mailto:{{page.email[0]}}">contact the workshop organisers</a> if you would like more information about the planned schedule.
@@ -410,9 +425,9 @@ please preview your site before committing, and make sure to run
   {% elsif site.carpentry == "lc" %}
   Library Carpentry
   {% endif %}
-      workshop, K-State affiliates will need access to a BeoCat account. If you do not already have a <a href="https://beocat.ksu.edu/">BeoCat account</a>, request one by January 13th, 2025.
-    You will need access to software as described below.
-    In addition, you will need an up-to-date web browser.
+  workshop,
+  you will need access to software as described below.
+  In addition, you will need an up-to-date web browser.
 </p>
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
@@ -446,19 +461,4 @@ during the workshop.
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
 {% elsif site.carpentry == "incubator" %}
-<div id="setup-genomics">
-Install required software for the workshop or update any installations you already have. Directions and links to downloads:
-
-<ul>
-<li><a href="https://swcarpentry.github.io/shell-novice/">The Unix Shell, day 1</a></li>
-<li><a href="https://carpentries-incubator.github.io/hpc-intro/setup.html">Introduction to High-Performance Computing, day 1</a></li>
-<li>HPC User, day 2
-<ul>
-  <li><a href="https://drdaveturner.github.io/HPC-User/index.html">HPC User, day 2</a></li>
-  <li><strong>K-State participants</strong>, request a <a href="https://beocat.ksu.edu/">BeoCat account</a> as soon as possible. If you are requesting an account for this workshop only, list Dave Turner daveturner@ksu.edu as your advisor and use the comments field to indicate that the account is for the HPC User Software Carpentry workshop from January 16-17.</li>
-  <li><strong>WSU participants</strong>, request a <a href="https://www.wichita.edu/services/hpc/hpc-guides.php">BeoShock account</a> as soon as possible. </li>
-  </ul>
-  </li>
-</ul>
-</div>
 {% endif %}
